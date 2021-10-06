@@ -1,11 +1,15 @@
 package com.ttn.spring.basics.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class BookTicketImp {
     TravelMedium travelMedium;
+
+    @Value("Have a safe journey")
+    String trip;
 
     @Autowired
     BookTicketImp(TravelMedium travelMedium){

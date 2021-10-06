@@ -17,6 +17,7 @@ public class DemoApplication {
 
 		ApplicationContext applicationContext = SpringApplication.run(DemoApplication.class, args);
 		BookTicketImp bookTicketImp = applicationContext.getBean(BookTicketImp.class);
+		System.out.println("Displaying Property ---- " + bookTicketImp.trip);
 		String source_dest = bookTicketImp.bookTicket("Delhi","Goa");
 		System.out.println(source_dest);
 	}
