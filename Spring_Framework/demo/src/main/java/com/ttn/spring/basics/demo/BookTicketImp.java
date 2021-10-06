@@ -1,8 +1,13 @@
 package com.ttn.spring.basics.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class BookTicketImp {
     TravelMedium travelMedium;
 
+    @Autowired
     BookTicketImp(TravelMedium travelMedium){
         this.travelMedium = travelMedium;
     }
