@@ -12,6 +12,7 @@ public class BookTicketImp {
     String trip;
 
     @Autowired
+    //Constructor injection
     BookTicketImp(TravelMedium travelMedium){
         this.travelMedium = travelMedium;
     }
